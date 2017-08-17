@@ -2,6 +2,12 @@
 <html lang="en">
 
 <head>
+    <title>Elevation for Success. Preparing students grades 9th-12th for a successful career.</title>
+    
+    <meta name="description" content="Non-profit organization offering professional training, apprenticeship and preparation programs for students grades 9th-12th. Helping
+    students create a career path to success. Creating productive and successful citizens to help stop the cycle
+    of poverty.">
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -89,7 +95,7 @@
                 <h2>Contact</h2>
                 <p class="lead">PO BOX 1322<br/>Ashland, VA 23005</p>
                 <hr/>
-                <p class="lead">804-496-1228<br/>elevationforsuccess@gmail.com</p>
+                <p class="lead">804-496-1128<br/>elevationforsuccess@gmail.com</p>
             </div>
         </div>
 
@@ -266,11 +272,11 @@
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 
                 var st = $(this).scrollTop();
-                if (st > lastScrollTop+70) {
+                if (st > lastScrollTop+100) {
                     console.log(st);
                     $("nav.sticky-top").hide();
                     lastScrollTop = st;
-                } else if(st < lastScrollTop-70) {
+                } else if(st < lastScrollTop-100 || st < 30) {
                     $("nav.sticky-top").show();
                     lastScrollTop = st;
                 }
