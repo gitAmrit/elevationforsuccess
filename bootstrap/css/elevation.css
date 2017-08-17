@@ -1,0 +1,59 @@
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 4rem 0; /* Space out the Bootstrap <hr> more */
+    border-top-color: #3A53A4;
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+  }
+
+  .no-margin {
+    margin: 0rem;
+  }
+
+  .bg-one {
+    background-color: #3A53A4;
+    color: #e9ecef;
+    border-radius: 0rem;
+  }
+
+  .bg-two{
+    background-color: #E07815;
+    color: #feefff;
+    border-radius: 0rem;
+  }
+
+  .bg-three{
+    background-color: #E0C115;
+    color: #000000;
+    border-radius: 0rem;
+  }
+
+  .lead-lg {
+    font-size: 1.75rem;
+    font-weight: 300;
+    list-style: none;
+}
+  
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 4rem;
+    }
+  }
+  
