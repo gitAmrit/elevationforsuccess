@@ -259,22 +259,6 @@
         crossorigin="anonymous"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
     <script src="./bootstrap/js/jquery.bootstrap-autohidingnavbar.js"></script>
-
-    <script>
-        var lastScrollTop = 0;
-        $(window).scroll(function (event) {
-            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-
-                var st = $(this).scrollTop();
-                if (st > lastScrollTop) {
-                    $("nav.sticky-top").hide();
-                } else {
-                    $("nav.sticky-top").show();
-                }
-                lastScrollTop = st;
-            }
-        });
-    </script>
 </body>
 
 </html>
