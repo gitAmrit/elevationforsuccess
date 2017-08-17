@@ -56,6 +56,10 @@
     .nav-btn, .nav-form {
       margin: 0.1rem!important;
     }
+
+    .jumbotron .featurette-heading {
+      margin-top: 3rem;
+    }
   }
 
   @media (min-width: 40em) {

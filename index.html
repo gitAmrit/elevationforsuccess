@@ -3,7 +3,7 @@
 
 <head>
     <title>Elevation for Success. Preparing students grades 9th-12th for a successful career.</title>
-    
+
     <meta name="description" content="Non-profit organization offering professional training, apprenticeship and preparation programs for students grades 9th-12th. Helping
     students create a career path to success. Creating productive and successful citizens to help stop the cycle
     of poverty.">
@@ -24,7 +24,7 @@
     <nav class="navbar sticky-top navbar-expand-sm navbar-light">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+                aria-expanded="true" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -271,14 +271,20 @@
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 
                 var st = $(this).scrollTop();
-                if (st > lastScrollTop+100) {
+                if (st > lastScrollTop + 100) {
                     console.log(st);
                     $("nav.sticky-top").hide();
                     lastScrollTop = st;
-                } else if(st < lastScrollTop-100 || st < 30) {
+                } else if (st < lastScrollTop - 100 || st < 30) {
                     $("nav.sticky-top").show();
                     lastScrollTop = st;
                 }
+            }
+        });
+
+        $(document).on('click', '.navbar-collapse.show', function (e) {
+            if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
+                $(this).collapse('hide');
             }
         });
     </script>
