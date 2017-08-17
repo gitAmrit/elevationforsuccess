@@ -39,12 +39,24 @@
     font-size: 1.75rem;
     font-weight: 300;
     list-style: none;
-}
+  }
+
+  .navbar {
+    box-shadow: 0 0px 4px 0 #8A8A8A;
+  }
   
   
   /* RESPONSIVE CSS
   -------------------------------------------------- */
-  
+  @media (max-width: 575px) {
+    .navbar {
+      padding: 0;
+    }
+    .nav-btn, .nav-form {
+      margin: 0.1rem!important;
+    }
+  }
+
   @media (min-width: 40em) {
     .featurette-heading {
       font-size: 50px;
